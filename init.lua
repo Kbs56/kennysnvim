@@ -279,20 +279,27 @@ local servers = {
       telemetry = { enable = false },
     },
   },
-}
 
-local lspconfig = require("lspconfig")
-lspconfig.gopls.setup({
-  settings = {
-    gopls = {
+  pyright = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        diagnosticMode = "openFilesOnly",
+        useLibraryCodeForTypes = true
+      }
+    }
+  },
+
+  gopls = {
+    go = {
       analyses = {
         unusedparams = true,
       },
       staticcheck = true,
       gofumpt = true,
     },
-  },
-})
+  }
+}
 
 -- Setup neovim lua configuration
 require('neodev').setup()
