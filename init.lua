@@ -43,6 +43,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.indent',
   require 'kennysheldon.plugins.comment',
   require 'kennysheldon.plugins.gitsigns',
+  require 'kennysheldon.plugins.terminal',
 }, {})
 
 -- [[ Setting options ]]
