@@ -44,6 +44,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.comment',
   require 'kennysheldon.plugins.gitsigns',
   require 'kennysheldon.plugins.terminal',
+  require 'kennysheldon.plugins.gopher',
 }, {})
 
 -- [[ Setting options ]]
