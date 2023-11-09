@@ -10,7 +10,7 @@ return {
         null_ls.builtins.formatting.golines,
       },
     })
-    on_attach = function(client, bufnr)
+    On_attach = function(client, bufnr)
       if client.supports_method("textDocument/formatting") then
         vim.api.nvim_clear_autocmds({
           group = augroup,
