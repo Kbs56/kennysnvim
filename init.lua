@@ -46,6 +46,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.terminal',
   require 'kennysheldon.plugins.gopher',
   require 'kennysheldon.plugins.none-ls',
+  require 'kennysheldon.plugins.peek',
 }, {})
 
 -- [[ Setting options ]]
@@ -323,8 +324,15 @@ local servers = {
       staticcheck = true,
       gofumpt = true,
     },
+  },
+
+  marksman = {
+    markdown = {
+      filetypes = 'markdown',
+    }
   }
 }
+
 
 -- Setup neovim lua configuration
 require('neodev').setup()
