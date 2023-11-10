@@ -327,8 +327,8 @@ local servers = {
   },
 
   marksman = {
-    markdown = {
-      filetypes = 'markdown',
+    Markdown = {
+      filetypes = { 'Markdown' }
     }
   }
 }
