@@ -4,7 +4,7 @@ return {
     version = "*",
     opts = {
       vim.keymap.set('n', '<leader>t', vim.cmd.ToggleTerm),
-      vim.keymap.set('t', '<leader>t', vim.cmd.ToggleTerm),
+      vim.keymap.set('t', '<leader><leader>', vim.cmd.ToggleTerm),
       vim.keymap.set('t', '<esc>', [[<C-\><C-n>]]),
       vim.keymap.set('t', 'jk', [[<C-\><C-n>]]),
       vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]]),
