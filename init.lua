@@ -47,6 +47,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.gopher',
   require 'kennysheldon.plugins.none-ls',
   require 'kennysheldon.plugins.peek',
+  require 'kennysheldon.plugins.nvim-surrond',
 }, {})
 
 -- [[ Setting options ]]
