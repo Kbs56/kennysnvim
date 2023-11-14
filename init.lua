@@ -147,6 +147,8 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<leader>fj", '<cmd>%!jq .<CR>')
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
