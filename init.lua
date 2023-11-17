@@ -48,6 +48,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.none-ls',
   require 'kennysheldon.plugins.peek',
   require 'kennysheldon.plugins.nvim-surrond',
+  require 'kennysheldon.plugins.anyjump',
 }, {})
 
 -- [[ Setting options ]]
