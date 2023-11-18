@@ -49,6 +49,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.peek',
   require 'kennysheldon.plugins.nvim-surrond',
   require 'kennysheldon.plugins.anyjump',
+  require 'kennysheldon.plugins.autotag',
 }, {})
 
 -- [[ Setting options ]]
