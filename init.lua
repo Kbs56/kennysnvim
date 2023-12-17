@@ -51,6 +51,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.anyjump',
   require 'kennysheldon.plugins.autotag',
   require 'kennysheldon.plugins.emmet',
+  require 'kennysheldon.plugins.templ',
 }, {})
 
 -- [[ Setting options ]]
