@@ -303,8 +303,8 @@ require('mason-lspconfig').setup()
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  -- html = {}
   -- pyright = {},
+  -- html = {}
   -- rust_analyzer = {},
 
   tsserver = {
