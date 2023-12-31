@@ -52,6 +52,8 @@ require('lazy').setup({
   require 'kennysheldon.plugins.autotag',
   require 'kennysheldon.plugins.emmet',
   require 'kennysheldon.plugins.templ',
+  require 'kennysheldon.plugins.tmux',
+  require 'kennysheldon.plugins.svelte',
 }, {})
 
 -- [[ Setting options ]]
@@ -303,8 +305,14 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+
+  -- html = { filetypes = { 'html', 'twig', 'hbs', 'svelte' } },
+
+  tsserver = {
+    Typescript = {
+      filetypes = { 'tsx', 'ts' }
+    }
+  },
 
   lua_ls = {
     Lua = {
