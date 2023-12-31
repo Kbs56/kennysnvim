@@ -303,10 +303,9 @@ require('mason-lspconfig').setup()
 local servers = {
   -- clangd = {},
   -- gopls = {},
+  -- html = {}
   -- pyright = {},
   -- rust_analyzer = {},
-
-  -- html = { filetypes = { 'html', 'twig', 'hbs', 'svelte' } },
 
   tsserver = {
     Typescript = {
