@@ -5,10 +5,10 @@ return {
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
-        theme = 'onedark',
-        component_separators = '|',
-        section_separators = '',
+        icons_enabled = true,
+        theme = 'dracula',
+        -- component_separators = '|',
+        -- section_separators = '',
       },
     },
   },
