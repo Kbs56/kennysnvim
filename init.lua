@@ -25,7 +25,6 @@ require('lazy').setup({
   },
 
   require 'kennysheldon.plugins.autoformat',
-  -- require 'kennysheldon.plugins.debug',
   require 'kennysheldon.plugins.autopair',
   require 'kennysheldon.plugins.harpoon',
   require 'kennysheldon.plugins.telescope',
@@ -34,7 +33,6 @@ require('lazy').setup({
   require 'kennysheldon.plugins.vim-sleuth',
   require 'kennysheldon.plugins.lsp',
   require 'kennysheldon.plugins.autocomplete',
-  -- require 'kennysheldon.plugins.whichkey',
   require 'kennysheldon.plugins.colors',
   require 'kennysheldon.plugins.lualine',
   require 'kennysheldon.plugins.indent',
