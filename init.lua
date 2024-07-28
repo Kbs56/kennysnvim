@@ -15,42 +15,41 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup({
-  {
-    'nvim-treesitter/nvim-treesitter',
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter-textobjects',
-    },
-    build = ':TSUpdate',
-  },
-
-  require 'kennysheldon.plugins.autoformat',
-  require 'kennysheldon.plugins.autopair',
-  require 'kennysheldon.plugins.harpoon',
-  require 'kennysheldon.plugins.telescope',
-  require 'kennysheldon.plugins.fugitive',
-  require 'kennysheldon.plugins.vim-rhubarb',
-  require 'kennysheldon.plugins.vim-sleuth',
-  require 'kennysheldon.plugins.lsp',
-  require 'kennysheldon.plugins.autocomplete',
-  require 'kennysheldon.plugins.colors',
-  require 'kennysheldon.plugins.lualine',
-  require 'kennysheldon.plugins.indent',
-  require 'kennysheldon.plugins.comment',
-  require 'kennysheldon.plugins.gitsigns',
-  require 'kennysheldon.plugins.terminal',
-  require 'kennysheldon.plugins.gopher',
-  require 'kennysheldon.plugins.none-ls',
-  require 'kennysheldon.plugins.peek',
-  require 'kennysheldon.plugins.nvim-surrond',
-  require 'kennysheldon.plugins.anyjump',
-  require 'kennysheldon.plugins.autotag',
-  require 'kennysheldon.plugins.emmet',
-  require 'kennysheldon.plugins.templ',
-  require 'kennysheldon.plugins.tmux',
-  require 'kennysheldon.plugins.svelte',
-  require 'kennysheldon.plugins.neotree'
-}, {})
+require('lazy').setup("plugins")
+--  {
+--    'nvim-treesitter/nvim-treesitter',
+--    dependencies = {
+--      'nvim-treesitter/nvim-treesitter-textobjects',
+--    },
+--    build = ':TSUpdate',
+--  },
+--
+--  require 'kennysheldon.plugins.autoformat',
+--  require 'kennysheldon.plugins.autopair',
+--  require 'kennysheldon.plugins.harpoon',
+--  require 'kennysheldon.plugins.telescope',
+--  require 'kennysheldon.plugins.fugitive',
+--  require 'kennysheldon.plugins.vim-rhubarb',
+--  require 'kennysheldon.plugins.vim-sleuth',
+--  require 'kennysheldon.plugins.lsp',
+--  require 'kennysheldon.plugins.autocomplete',
+--  require 'kennysheldon.plugins.colors',
+--  require 'kennysheldon.plugins.lualine',
+--  require 'kennysheldon.plugins.indent',
+--  require 'kennysheldon.plugins.comment',
+--  require 'kennysheldon.plugins.gitsigns',
+--  require 'kennysheldon.plugins.terminal',
+--  require 'kennysheldon.plugins.gopher',
+--  require 'kennysheldon.plugins.none-ls',
+--  require 'kennysheldon.plugins.peek',
+--  require 'kennysheldon.plugins.nvim-surrond',
+--  require 'kennysheldon.plugins.anyjump',
+--  require 'kennysheldon.plugins.autotag',
+--  require 'kennysheldon.plugins.emmet',
+--  require 'kennysheldon.plugins.templ',
+--  require 'kennysheldon.plugins.tmux',
+--  require 'kennysheldon.plugins.svelte',
+--  require 'kennysheldon.plugins.neotree'
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
