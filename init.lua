@@ -2,9 +2,6 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.nofsync = true
 
--- Install package manager
---    https://github.com/folke/lazy.nvim
---    `:help lazy.nvim.txt` for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system {
@@ -54,6 +51,7 @@ require('lazy').setup({
   require 'kennysheldon.plugins.templ',
   require 'kennysheldon.plugins.tmux',
   require 'kennysheldon.plugins.svelte',
+  require 'kennysheldon.plugins.neotree'
 }, {})
 
 -- [[ Setting options ]]
@@ -154,6 +152,8 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<leader>fj", '<cmd>%!jq .<CR>')
+
+vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
