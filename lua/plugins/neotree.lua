@@ -16,7 +16,8 @@ return {
           never_show = {
             ".git"
           }
-        }
+        },
+        hijack_netrw_behavior = "disabled"
       }
     })
   end
